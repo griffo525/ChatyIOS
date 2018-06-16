@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225920D420D56E2200025111 /* roundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225920D320D56E2200025111 /* roundButton.swift */; };
+		225920D620D56F1300025111 /* customBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225920D520D56F1300025111 /* customBackground.swift */; };
+		225920D820D56FBF00025111 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225920D720D56FBF00025111 /* LoginVC.swift */; };
+		225920DA20D571EA00025111 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225920D920D571EA00025111 /* Extensions.swift */; };
+		225920DC20D59A9100025111 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225920DB20D59A9100025111 /* HomeViewController.swift */; };
+		22FC3C4020D1A37C0066AB8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC3C3F20D1A37C0066AB8E /* AppDelegate.swift */; };
+		22FC3C4220D1A37C0066AB8E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC3C4120D1A37C0066AB8E /* MenuViewController.swift */; };
+		22FC3C4520D1A37C0066AB8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FC3C4320D1A37C0066AB8E /* Main.storyboard */; };
+		22FC3C4820D1A37C0066AB8E /* Chaty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22FC3C4620D1A37C0066AB8E /* Chaty.xcdatamodeld */; };
+		22FC3C4A20D1A37D0066AB8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FC3C4920D1A37D0066AB8E /* Assets.xcassets */; };
+		22FC3C4D20D1A37D0066AB8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FC3C4B20D1A37D0066AB8E /* LaunchScreen.storyboard */; };
+		22FC3C5820D1A37E0066AB8E /* ChatyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC3C5720D1A37E0066AB8E /* ChatyTests.swift */; };
+		22FC3C6320D1A37E0066AB8E /* ChatyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC3C6220D1A37E0066AB8E /* ChatyUITests.swift */; };
+		22FC3C7120D1A4C40066AB8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22FC3C7020D1A4C40066AB8E /* GoogleService-Info.plist */; };
+		22FC3C7320D1A8A50066AB8E /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FC3C7220D1A8A50066AB8E /* FirebaseCore.framework */; };
+		22FC3C7520D1A8A50066AB8E /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FC3C7420D1A8A50066AB8E /* FirebaseDatabase.framework */; };
+		22FC3C7720D1A8A50066AB8E /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FC3C7620D1A8A50066AB8E /* GoogleToolboxForMac.framework */; };
+		22FC3C7C20D1AE370066AB8E /* ChatyLaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22FC3C7B20D1AE370066AB8E /* ChatyLaunchScreen.jpg */; };
+		22FC3C7F20D1B1720066AB8E /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22FC3C7E20D1B1720066AB8E /* Background.jpg */; };
+		22FC3C8120D2F0D90066AB8E /* Pastel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FC3C8020D2F0D90066AB8E /* Pastel.framework */; };
+		22FC3C9020D453FE0066AB8E /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FC3C8F20D453FE0066AB8E /* FirebaseAuth.framework */; };
+		22FC3C9520D455660066AB8E /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FC3C9420D455660066AB8E /* GTMSessionFetcher.framework */; };
+		2B1932136CA2F26DA85E0E0F /* Pods_ChatyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32167FA40F58AD31E0FC9E6D /* Pods_ChatyUITests.framework */; };
+		89CBE3229C3CD45779E5C00D /* Pods_Chaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEA70E7705C9973A4FA8A7E /* Pods_Chaty.framework */; };
+		E77FFFEB3A2C7F0901E02792 /* Pods_ChatyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B9803123EE312E0DB17892 /* Pods_ChatyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22FC3C5420D1A37E0066AB8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22FC3C3420D1A37C0066AB8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22FC3C3B20D1A37C0066AB8E;
+			remoteInfo = Chaty;
+		};
+		22FC3C5F20D1A37E0066AB8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22FC3C3420D1A37C0066AB8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22FC3C3B20D1A37C0066AB8E;
+			remoteInfo = Chaty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		130DA9AD51401FBA61B5EE77 /* Pods-ChatyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatyUITests/Pods-ChatyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		225920D320D56E2200025111 /* roundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundButton.swift; sourceTree = "<group>"; };
+		225920D520D56F1300025111 /* customBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBackground.swift; sourceTree = "<group>"; };
+		225920D720D56FBF00025111 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		225920D920D571EA00025111 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		225920DB20D59A9100025111 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22FC3C3C20D1A37C0066AB8E /* Chaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C3F20D1A37C0066AB8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22FC3C4120D1A37C0066AB8E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		22FC3C4420D1A37C0066AB8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22FC3C4720D1A37C0066AB8E /* Chaty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chaty.xcdatamodel; sourceTree = "<group>"; };
+		22FC3C4920D1A37D0066AB8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22FC3C4C20D1A37D0066AB8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22FC3C4E20D1A37E0066AB8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FC3C5320D1A37E0066AB8E /* ChatyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C5720D1A37E0066AB8E /* ChatyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatyTests.swift; sourceTree = "<group>"; };
+		22FC3C5920D1A37E0066AB8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FC3C5E20D1A37E0066AB8E /* ChatyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C6220D1A37E0066AB8E /* ChatyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatyUITests.swift; sourceTree = "<group>"; };
+		22FC3C6420D1A37E0066AB8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FC3C7020D1A4C40066AB8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22FC3C7220D1A8A50066AB8E /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C7420D1A8A50066AB8E /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C7620D1A8A50066AB8E /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C7B20D1AE370066AB8E /* ChatyLaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChatyLaunchScreen.jpg; sourceTree = "<group>"; };
+		22FC3C7E20D1B1720066AB8E /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		22FC3C8020D2F0D90066AB8E /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C8F20D453FE0066AB8E /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FC3C9420D455660066AB8E /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32167FA40F58AD31E0FC9E6D /* Pods_ChatyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		370D4E378978162AA07CBE79 /* Pods-ChatyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatyTests/Pods-ChatyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9C5153C90DCDD27C20315D /* Pods-Chaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chaty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chaty/Pods-Chaty.debug.xcconfig"; sourceTree = "<group>"; };
+		64ED72C2FBE886E701DD6249 /* Pods-ChatyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatyUITests/Pods-ChatyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66B9803123EE312E0DB17892 /* Pods_ChatyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEA70E7705C9973A4FA8A7E /* Pods_Chaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF13297D1EBD62CF89E70FE6 /* Pods-Chaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chaty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chaty/Pods-Chaty.release.xcconfig"; sourceTree = "<group>"; };
+		F3B01AEACA226CAFEF68E03A /* Pods-ChatyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatyTests/Pods-ChatyTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22FC3C3920D1A37C0066AB8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FC3C9520D455660066AB8E /* GTMSessionFetcher.framework in Frameworks */,
+				22FC3C9020D453FE0066AB8E /* FirebaseAuth.framework in Frameworks */,
+				22FC3C8120D2F0D90066AB8E /* Pastel.framework in Frameworks */,
+				22FC3C7320D1A8A50066AB8E /* FirebaseCore.framework in Frameworks */,
+				22FC3C7520D1A8A50066AB8E /* FirebaseDatabase.framework in Frameworks */,
+				22FC3C7720D1A8A50066AB8E /* GoogleToolboxForMac.framework in Frameworks */,
+				89CBE3229C3CD45779E5C00D /* Pods_Chaty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FC3C5020D1A37E0066AB8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77FFFEB3A2C7F0901E02792 /* Pods_ChatyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FC3C5B20D1A37E0066AB8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1932136CA2F26DA85E0E0F /* Pods_ChatyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ED83DD77D2D15D6C6D81F9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C9C5153C90DCDD27C20315D /* Pods-Chaty.debug.xcconfig */,
+				EF13297D1EBD62CF89E70FE6 /* Pods-Chaty.release.xcconfig */,
+				370D4E378978162AA07CBE79 /* Pods-ChatyTests.debug.xcconfig */,
+				F3B01AEACA226CAFEF68E03A /* Pods-ChatyTests.release.xcconfig */,
+				130DA9AD51401FBA61B5EE77 /* Pods-ChatyUITests.debug.xcconfig */,
+				64ED72C2FBE886E701DD6249 /* Pods-ChatyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		22FC3C3320D1A37C0066AB8E = {
+			isa = PBXGroup;
+			children = (
+				22FC3C3E20D1A37C0066AB8E /* Chaty */,
+				22FC3C5620D1A37E0066AB8E /* ChatyTests */,
+				22FC3C6120D1A37E0066AB8E /* ChatyUITests */,
+				22FC3C3D20D1A37C0066AB8E /* Products */,
+				1ED83DD77D2D15D6C6D81F9A /* Pods */,
+				C92CB402FE491E32676C5BA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22FC3C3D20D1A37C0066AB8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C3C20D1A37C0066AB8E /* Chaty.app */,
+				22FC3C5320D1A37E0066AB8E /* ChatyTests.xctest */,
+				22FC3C5E20D1A37E0066AB8E /* ChatyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22FC3C3E20D1A37C0066AB8E /* Chaty */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C8520D2F3FE0066AB8E /* Controllers */,
+				22FC3C8220D2F2A80066AB8E /* Helper */,
+				22FC3C7820D1AE130066AB8E /* Assets */,
+				22FC3C3F20D1A37C0066AB8E /* AppDelegate.swift */,
+				22FC3C4320D1A37C0066AB8E /* Main.storyboard */,
+				22FC3C4920D1A37D0066AB8E /* Assets.xcassets */,
+				22FC3C4B20D1A37D0066AB8E /* LaunchScreen.storyboard */,
+				22FC3C7020D1A4C40066AB8E /* GoogleService-Info.plist */,
+				22FC3C4E20D1A37E0066AB8E /* Info.plist */,
+				22FC3C4620D1A37C0066AB8E /* Chaty.xcdatamodeld */,
+			);
+			path = Chaty;
+			sourceTree = "<group>";
+		};
+		22FC3C5620D1A37E0066AB8E /* ChatyTests */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C5720D1A37E0066AB8E /* ChatyTests.swift */,
+				22FC3C5920D1A37E0066AB8E /* Info.plist */,
+			);
+			path = ChatyTests;
+			sourceTree = "<group>";
+		};
+		22FC3C6120D1A37E0066AB8E /* ChatyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C6220D1A37E0066AB8E /* ChatyUITests.swift */,
+				22FC3C6420D1A37E0066AB8E /* Info.plist */,
+			);
+			path = ChatyUITests;
+			sourceTree = "<group>";
+		};
+		22FC3C7820D1AE130066AB8E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C7D20D1B1480066AB8E /* Background */,
+				22FC3C7A20D1AE2A0066AB8E /* LaunchScreen */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		22FC3C7A20D1AE2A0066AB8E /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C7B20D1AE370066AB8E /* ChatyLaunchScreen.jpg */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		22FC3C7D20D1B1480066AB8E /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C7E20D1B1720066AB8E /* Background.jpg */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		22FC3C8220D2F2A80066AB8E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				225920D320D56E2200025111 /* roundButton.swift */,
+				225920D520D56F1300025111 /* customBackground.swift */,
+				225920D920D571EA00025111 /* Extensions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		22FC3C8520D2F3FE0066AB8E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C4120D1A37C0066AB8E /* MenuViewController.swift */,
+				225920D720D56FBF00025111 /* LoginVC.swift */,
+				225920DB20D59A9100025111 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C92CB402FE491E32676C5BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22FC3C9420D455660066AB8E /* GTMSessionFetcher.framework */,
+				22FC3C8F20D453FE0066AB8E /* FirebaseAuth.framework */,
+				22FC3C8020D2F0D90066AB8E /* Pastel.framework */,
+				22FC3C7220D1A8A50066AB8E /* FirebaseCore.framework */,
+				22FC3C7420D1A8A50066AB8E /* FirebaseDatabase.framework */,
+				22FC3C7620D1A8A50066AB8E /* GoogleToolboxForMac.framework */,
+				6DEA70E7705C9973A4FA8A7E /* Pods_Chaty.framework */,
+				66B9803123EE312E0DB17892 /* Pods_ChatyTests.framework */,
+				32167FA40F58AD31E0FC9E6D /* Pods_ChatyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22FC3C3B20D1A37C0066AB8E /* Chaty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22FC3C6720D1A37E0066AB8E /* Build configuration list for PBXNativeTarget "Chaty" */;
+			buildPhases = (
+				416288FEC860AA0A46A4DE74 /* [CP] Check Pods Manifest.lock */,
+				22FC3C3820D1A37C0066AB8E /* Sources */,
+				22FC3C3920D1A37C0066AB8E /* Frameworks */,
+				22FC3C3A20D1A37C0066AB8E /* Resources */,
+				BE7DEA9BCB38CF6AC346E35F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chaty;
+			productName = Chaty;
+			productReference = 22FC3C3C20D1A37C0066AB8E /* Chaty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22FC3C5220D1A37E0066AB8E /* ChatyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22FC3C6A20D1A37E0066AB8E /* Build configuration list for PBXNativeTarget "ChatyTests" */;
+			buildPhases = (
+				91C3A77FC3691549868A7F1D /* [CP] Check Pods Manifest.lock */,
+				22FC3C4F20D1A37E0066AB8E /* Sources */,
+				22FC3C5020D1A37E0066AB8E /* Frameworks */,
+				22FC3C5120D1A37E0066AB8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22FC3C5520D1A37E0066AB8E /* PBXTargetDependency */,
+			);
+			name = ChatyTests;
+			productName = ChatyTests;
+			productReference = 22FC3C5320D1A37E0066AB8E /* ChatyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22FC3C5D20D1A37E0066AB8E /* ChatyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22FC3C6D20D1A37E0066AB8E /* Build configuration list for PBXNativeTarget "ChatyUITests" */;
+			buildPhases = (
+				0A52DA3EDA4546656E5C3265 /* [CP] Check Pods Manifest.lock */,
+				22FC3C5A20D1A37E0066AB8E /* Sources */,
+				22FC3C5B20D1A37E0066AB8E /* Frameworks */,
+				22FC3C5C20D1A37E0066AB8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22FC3C6020D1A37E0066AB8E /* PBXTargetDependency */,
+			);
+			name = ChatyUITests;
+			productName = ChatyUITests;
+			productReference = 22FC3C5E20D1A37E0066AB8E /* ChatyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22FC3C3420D1A37C0066AB8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Griffiths;
+				TargetAttributes = {
+					22FC3C3B20D1A37C0066AB8E = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					22FC3C5220D1A37E0066AB8E = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 22FC3C3B20D1A37C0066AB8E;
+					};
+					22FC3C5D20D1A37E0066AB8E = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 22FC3C3B20D1A37C0066AB8E;
+					};
+				};
+			};
+			buildConfigurationList = 22FC3C3720D1A37C0066AB8E /* Build configuration list for PBXProject "Chaty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22FC3C3320D1A37C0066AB8E;
+			productRefGroup = 22FC3C3D20D1A37C0066AB8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22FC3C3B20D1A37C0066AB8E /* Chaty */,
+				22FC3C5220D1A37E0066AB8E /* ChatyTests */,
+				22FC3C5D20D1A37E0066AB8E /* ChatyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22FC3C3A20D1A37C0066AB8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FC3C4D20D1A37D0066AB8E /* LaunchScreen.storyboard in Resources */,
+				22FC3C7120D1A4C40066AB8E /* GoogleService-Info.plist in Resources */,
+				22FC3C4A20D1A37D0066AB8E /* Assets.xcassets in Resources */,
+				22FC3C4520D1A37C0066AB8E /* Main.storyboard in Resources */,
+				22FC3C7C20D1AE370066AB8E /* ChatyLaunchScreen.jpg in Resources */,
+				22FC3C7F20D1B1720066AB8E /* Background.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FC3C5120D1A37E0066AB8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FC3C5C20D1A37E0066AB8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A52DA3EDA4546656E5C3265 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		416288FEC860AA0A46A4DE74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chaty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C3A77FC3691549868A7F1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE7DEA9BCB38CF6AC346E35F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chaty/Pods-Chaty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chaty/Pods-Chaty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22FC3C3820D1A37C0066AB8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225920D420D56E2200025111 /* roundButton.swift in Sources */,
+				22FC3C4220D1A37C0066AB8E /* MenuViewController.swift in Sources */,
+				225920D820D56FBF00025111 /* LoginVC.swift in Sources */,
+				225920DC20D59A9100025111 /* HomeViewController.swift in Sources */,
+				225920DA20D571EA00025111 /* Extensions.swift in Sources */,
+				22FC3C4820D1A37C0066AB8E /* Chaty.xcdatamodeld in Sources */,
+				225920D620D56F1300025111 /* customBackground.swift in Sources */,
+				22FC3C4020D1A37C0066AB8E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FC3C4F20D1A37E0066AB8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FC3C5820D1A37E0066AB8E /* ChatyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22FC3C5A20D1A37E0066AB8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FC3C6320D1A37E0066AB8E /* ChatyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22FC3C5520D1A37E0066AB8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22FC3C3B20D1A37C0066AB8E /* Chaty */;
+			targetProxy = 22FC3C5420D1A37E0066AB8E /* PBXContainerItemProxy */;
+		};
+		22FC3C6020D1A37E0066AB8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22FC3C3B20D1A37C0066AB8E /* Chaty */;
+			targetProxy = 22FC3C5F20D1A37E0066AB8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22FC3C4320D1A37C0066AB8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22FC3C4420D1A37C0066AB8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22FC3C4B20D1A37D0066AB8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22FC3C4C20D1A37D0066AB8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22FC3C6520D1A37E0066AB8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22FC3C6620D1A37E0066AB8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22FC3C6820D1A37E0066AB8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9C5153C90DCDD27C20315D /* Pods-Chaty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4MG7PL5MT;
+				INFOPLIST_FILE = Chaty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sam.Chaty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22FC3C6920D1A37E0066AB8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF13297D1EBD62CF89E70FE6 /* Pods-Chaty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4MG7PL5MT;
+				INFOPLIST_FILE = Chaty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sam.Chaty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22FC3C6B20D1A37E0066AB8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 370D4E378978162AA07CBE79 /* Pods-ChatyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4MG7PL5MT;
+				INFOPLIST_FILE = ChatyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sam.ChatyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chaty.app/Chaty";
+			};
+			name = Debug;
+		};
+		22FC3C6C20D1A37E0066AB8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B01AEACA226CAFEF68E03A /* Pods-ChatyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4MG7PL5MT;
+				INFOPLIST_FILE = ChatyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sam.ChatyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chaty.app/Chaty";
+			};
+			name = Release;
+		};
+		22FC3C6E20D1A37E0066AB8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 130DA9AD51401FBA61B5EE77 /* Pods-ChatyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4MG7PL5MT;
+				INFOPLIST_FILE = ChatyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sam.ChatyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chaty;
+			};
+			name = Debug;
+		};
+		22FC3C6F20D1A37E0066AB8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64ED72C2FBE886E701DD6249 /* Pods-ChatyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4MG7PL5MT;
+				INFOPLIST_FILE = ChatyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sam.ChatyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chaty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22FC3C3720D1A37C0066AB8E /* Build configuration list for PBXProject "Chaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FC3C6520D1A37E0066AB8E /* Debug */,
+				22FC3C6620D1A37E0066AB8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22FC3C6720D1A37E0066AB8E /* Build configuration list for PBXNativeTarget "Chaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FC3C6820D1A37E0066AB8E /* Debug */,
+				22FC3C6920D1A37E0066AB8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22FC3C6A20D1A37E0066AB8E /* Build configuration list for PBXNativeTarget "ChatyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FC3C6B20D1A37E0066AB8E /* Debug */,
+				22FC3C6C20D1A37E0066AB8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22FC3C6D20D1A37E0066AB8E /* Build configuration list for PBXNativeTarget "ChatyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FC3C6E20D1A37E0066AB8E /* Debug */,
+				22FC3C6F20D1A37E0066AB8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22FC3C4620D1A37C0066AB8E /* Chaty.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22FC3C4720D1A37C0066AB8E /* Chaty.xcdatamodel */,
+			);
+			currentVersion = 22FC3C4720D1A37C0066AB8E /* Chaty.xcdatamodel */;
+			path = Chaty.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 22FC3C3420D1A37C0066AB8E /* Project object */;
+}
